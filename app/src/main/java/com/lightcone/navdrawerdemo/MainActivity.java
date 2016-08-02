@@ -1,5 +1,7 @@
 package com.lightcone.navdrawerdemo;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -82,6 +84,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
+            Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+            startActivity(intent);
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -89,7 +93,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
-
+            String gid = "101802627488828432585";
+            String add = "https://plus.google.com/"+gid+"/posts";
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(add)));
+            //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/101802627488828432585/posts")));
         } else if (id == R.id.nav_send) {
 
         }
