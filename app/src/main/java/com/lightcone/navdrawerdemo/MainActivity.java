@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
+
             String gid = "101802627488828432585";
             String add = "https://plus.google.com/"+gid+"/posts";
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(add)));
