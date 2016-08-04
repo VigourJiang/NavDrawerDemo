@@ -23,4 +23,4 @@ for All Projects</i> from the menu.
 A complete description of this project, including steps to build it from 
 scratch, may be found by 
 going to http://eagle.phys.utk.edu/guidry/android/ and selecting 
-<em>Navigation Drawer</em> from the menu.
+<em>Navigation Drawers and Such</em> from the menu.
