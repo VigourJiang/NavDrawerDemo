@@ -87,6 +87,9 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
+            String number="865-974-7810";
+            String numberToDial = "tel:"+number;
+            startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(numberToDial)));
 
         } else if (id == R.id.nav_slideshow) {
 
