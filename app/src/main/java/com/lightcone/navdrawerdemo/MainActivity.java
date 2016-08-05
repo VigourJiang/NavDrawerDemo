@@ -83,26 +83,53 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+
             // Handle the camera action
             Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
             startActivity(intent);
+
         } else if (id == R.id.nav_gallery) {
-            String number="865-974-7810";
+
+            String number="202-456-1111";   // White House phone number
             String numberToDial = "tel:"+number;
             startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(numberToDial)));
 
         } else if (id == R.id.nav_slideshow) {
 
+            // Will open to your google slides account if you have one
+            Intent markerIntent=new Intent(Intent.ACTION_VIEW);
+            markerIntent.setData(Uri.parse("https://docs.google.com/presentation/u/0/"));
+            startActivity(markerIntent);
+
+           /* // This will only work if dropbox app is installed
+            Intent intent = getPackageManager().getLaunchIntentForPackage(
+                    "com.dropbox.android");
+            startActivity(intent);*/
+            /*Intent markerIntent=new Intent(Intent.ACTION_VIEW);
+            markerIntent.setData(Uri.parse("https://www.dropbox.com/login"));
+            startActivity(markerIntent);*/
+
         } else if (id == R.id.nav_manage) {
+            // Will open to your google drive account if you have one
+            Intent markerIntent=new Intent(Intent.ACTION_VIEW);
+            markerIntent.setData(Uri.parse("https://drive.google.com/drive"));
+            startActivity(markerIntent);
 
         } else if (id == R.id.nav_share) {
+
+            // Will open to my Google+ homepage.  Change gid to your G+ id
+            // to access your G+ page.  To get your id, open Google+ with a
+            // browser and click Profile.  The long number displayed as part
+            // of the URL in the address bar is your G+ id.
 
             String gid = "101802627488828432585";
             String add = "https://plus.google.com/"+gid+"/posts";
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(add)));
-            //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/101802627488828432585/posts")));
-        } else if (id == R.id.nav_send) {
 
+        } else if (id == R.id.nav_send) {
+            Intent markerIntent=new Intent(Intent.ACTION_VIEW);
+            markerIntent.setData(Uri.parse("https://play.google.com/store"));
+            startActivity(markerIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
