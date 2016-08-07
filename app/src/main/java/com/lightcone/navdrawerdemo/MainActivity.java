@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
             startActivity(intent);
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_call) {
 
             String number="202-456-1111";   // White House phone number
             String numberToDial = "tel:"+number;
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity
             markerIntent.setData(Uri.parse("https://www.dropbox.com/login"));
             startActivity(markerIntent);*/
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_drive) {
             // Will open to your google drive account if you have one
             Intent markerIntent=new Intent(Intent.ACTION_VIEW);
             markerIntent.setData(Uri.parse("https://drive.google.com/drive"));
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity
             String add = "https://plus.google.com/"+gid+"/posts";
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(add)));
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_play) {
             Intent markerIntent=new Intent(Intent.ACTION_VIEW);
             markerIntent.setData(Uri.parse("https://play.google.com/store"));
             startActivity(markerIntent);
