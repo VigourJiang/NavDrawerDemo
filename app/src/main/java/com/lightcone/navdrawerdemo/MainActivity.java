@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -90,8 +89,8 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_call) {
 
-            String number="202-456-1111";   // White House phone number
-            String numberToDial = "tel:"+number;
+            String number = "202-456-1111";   // White House phone number
+            String numberToDial = "tel:" + number;
             startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(numberToDial)));
 
         } else if (id == R.id.nav_slideshow) {
@@ -99,21 +98,23 @@ public class MainActivity extends AppCompatActivity
             // Will open to your google slides account if you have one, assuming
             // that you are logged into your Google account on the device.
 
-            Intent markerIntent=new Intent(Intent.ACTION_VIEW);
+            Intent markerIntent = new Intent(Intent.ACTION_VIEW);
             markerIntent.setData(Uri.parse("https://docs.google.com/presentation/u/0/"));
             startActivity(markerIntent);
 
-           /* // This will only work if dropbox app is installed
-            Intent intent = getPackageManager().getLaunchIntentForPackage(
+            // This will only work if dropbox app is installed
+            /*Intent intent = getPackageManager().getLaunchIntentForPackage(
                     "com.dropbox.android");
             startActivity(intent);*/
+
             /*Intent markerIntent=new Intent(Intent.ACTION_VIEW);
             markerIntent.setData(Uri.parse("https://www.dropbox.com/login"));
             startActivity(markerIntent);*/
 
         } else if (id == R.id.nav_drive) {
+
             // Will open to your google drive account if you have one
-            Intent markerIntent=new Intent(Intent.ACTION_VIEW);
+            Intent markerIntent = new Intent(Intent.ACTION_VIEW);
             markerIntent.setData(Uri.parse("https://drive.google.com/drive"));
             startActivity(markerIntent);
 
@@ -125,14 +126,20 @@ public class MainActivity extends AppCompatActivity
             // of the URL in the address bar is your G+ id.
 
             String gid = "101802627488828432585";
-            String add = "https://plus.google.com/"+gid+"/posts";
+            String add = "https://plus.google.com/" + gid + "/posts";
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(add)));
 
         } else if (id == R.id.nav_play) {
-            Intent markerIntent=new Intent(Intent.ACTION_VIEW);
+
+            // Open the Play Store
+
+            Intent markerIntent = new Intent(Intent.ACTION_VIEW);
             markerIntent.setData(Uri.parse("https://play.google.com/store"));
             startActivity(markerIntent);
         }
+
+        // Close the navigation drawer and return true indicating that the event
+        // has been handled.
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

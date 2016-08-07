@@ -9,15 +9,15 @@
     <string name="description">This app gives examples of implementing navigation drawers,
     floating action buttons, snackbars, toolbars, and vector graphics assets.
     Click the three horizontal bars on the left of the toolbar, and the floating button
-    bottom right to try it out.</string>
+    bottom right, to try it out.</string>
 
     <string name="webadd">eagle.phys.utk.edu/guidry/android</string>
     <string name="take_picture">Take Picture</string>
     <string name="call_wh">Call White House</string>
     <string name="slide_show">Slideshow</string>
     <string name="google_drive">Google Drive</string>
-    <string name="secTitle1">Socialize</string>
+    <string name="secTitle1">Socialism</string>
     <string name="google_plus">Google +</string>
-    <string name="secTitle2">Purchase</string>
+    <string name="secTitle2">Capitalism</string>
     <string name="play_store">Play Store</string>
 </resources>
