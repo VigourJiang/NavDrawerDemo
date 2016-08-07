@@ -5,31 +5,36 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Take Picture" />
+            android:title="@string/take_picture" />
         <item
             android:id="@+id/nav_call"
             android:icon="@drawable/ic_contact_phone_black_24dp"
-            android:title="Call White House" />
+            android:title="@string/call_wh" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="@string/slide_show" />
         <item
             android:id="@+id/nav_drive"
             android:icon="@drawable/ic_cloud_queue_black_24dp"
-            android:title="Google Drive" />
+            android:title="@string/google_drive" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/secTitle1">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Google +" />
+                android:title="@string/google_plus" />
+        </menu>
+    </item>
+
+    <item android:title="@string/secTitle2">
+        <menu>
             <item
                 android:id="@+id/nav_play"
                 android:icon="@drawable/ic_android_black_24dp"
-                android:title="Play Store" />
+                android:title="@string/play_store" />
         </menu>
     </item>
 
