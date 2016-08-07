@@ -10,4 +10,6 @@
     floating action buttons, snackbars, toolbars, and vector graphics assets.
     Click the three horizontal bars on the left of the toolbar, and the floating button
     bottom right to try it out.</string>
+
+    <string name="webadd">eagle.phys.utk.edu/guidry/android</string>
 </resources>
