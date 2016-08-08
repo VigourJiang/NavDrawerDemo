@@ -161,9 +161,8 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    // Deal with click on snackbar
     @Override
     public void onClick(View v) {
-        //Log.i("SNACK", "Snackbar button clicked");
+
     }
 }
