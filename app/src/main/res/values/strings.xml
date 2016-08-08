@@ -20,4 +20,6 @@
     <string name="google_plus">Google +</string>
     <string name="secTitle2">Capitalism</string>
     <string name="play_store">Play Store</string>
+
+    <string name="snackText">Text for snackbar</string>
 </resources>
