@@ -16,7 +16,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, R.string.snackText, Snackbar.LENGTH_LONG)
+                Snackbar.make(view, R.string.snackText, Snackbar.LENGTH_INDEFINITE)
                         .setAction(R.string.snackButtonText, new View.OnClickListener() {
                             // Handle clicks on snackbar button
                             @Override

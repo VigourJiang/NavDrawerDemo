@@ -21,6 +21,6 @@
     <string name="secTitle2">Capitalism</string>
     <string name="play_store">Play Store</string>
 
-    <string name="snackText">Device will lock in 10 seconds</string>
-    <string name="snackButtonText">Do Not Lock!</string>
+    <string name="snackText">Device will lock in 20 seconds</string>
+    <string name="snackButtonText">Lock Immediately</string>
 </resources>
