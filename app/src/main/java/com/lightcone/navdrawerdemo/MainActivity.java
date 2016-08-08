@@ -1,6 +1,7 @@
 package com.lightcone.navdrawerdemo;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -27,12 +28,19 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Create a floating action button
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        // Add a click listener to the floating action button that launches a snackbar
+        // and sets a listener on it to deal with clicks on the action button of the
+        // snackbar.
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, R.string.snackText, Snackbar.LENGTH_LONG)
-                        .setAction("Action", new View.OnClickListener() {
+                        .setAction(R.string.snackButtonText, new View.OnClickListener() {
+                            // Handle clicks on snackbar button
                             @Override
                             public void onClick(View v) {
                                 Log.i("SNACK", "Snackbar button was clicked");
