@@ -1,5 +1,5 @@
 # NavDrawerDemo
-Demonstration of implementing an Android Navigation Drawer component and floating action button.
+Demonstration of implementing an Android Navigation Drawer component and floating action button. Also provides and introduction to creating and using vector graphics assets in Android Studio.
 
 The projects in these repositories correspond to individual lessons in the free online android programming course at http://eagle.phys.utk.edu/guidry/android/ 
 
